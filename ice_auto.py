@@ -86,7 +86,7 @@ if attachments:
         msg['Subject'] = f"ICE/NGX Cleared Power & Gas Reports - {date_str}"
         msg['From'] = EMAIL_SENDER
         msg['To'] = EMAIL_RECEIVER
-        msg.set_content(f"Please find attached ICE & NGX cleared power & gas reports for {date_str}.")
+        msg.set_content(f"Please find attached ICE & NGX cleared power & gas reports for today {date_str}.")
 
         for fpath in attachments:
             with open(fpath, 'rb') as f:
